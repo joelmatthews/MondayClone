@@ -1,0 +1,28 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $font-color-primary;
+    font-weight: 300;
+}
+
+.heading-1 {
+    font-size: 3.5rem;
+    color: $font-color-primary-dark;
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, $color-success 20%, $color-info 40%, $color-warning 60%, $color-purple 80%, $color-pink 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .5s;
+
+    &:hover {
+        transform: translateY(-.5rem) scale(1.05);
+    }
+    
+}
+
+.heading-2 {
+    font-size: 2.5rem;
+}
+
+.heading-3 {
+    font-size: 2rem;
+}

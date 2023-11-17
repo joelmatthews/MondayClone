@@ -1,0 +1,63 @@
+.sidebar {
+    padding: 3rem;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 1fr;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 3rem;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+
+    &__input {
+        padding: 1rem 3rem 1rem 2rem;
+        outline: none;
+        border-radius: .5rem;
+        border: none;
+        font-family: inherit;
+        background-color: $layout-color-primary;
+        width: 100%;
+    }
+
+    &__btn {
+        margin-top: .5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        outline: none;
+        border: none;
+        background-color: $color-info;
+        font-size: 1.6rem;
+        font-family: inherit;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            filter: brightness(90%);
+        }
+    }
+
+    &__icon {
+        fill: $font-color-primary;
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.tasks {
+    justify-self: start;
+    width: 100%;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: .2rem;
+        background-color: $font-color-primary;
+        transform: translateY(-1rem);
+    }
+}

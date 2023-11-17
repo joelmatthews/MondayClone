@@ -1,0 +1,41 @@
+.action-bar {
+
+    &__btn {
+        padding: 1rem 1.5rem;
+        border-radius: .75rem;
+        border: none;
+        font-family: inherit;
+        color: currentColor;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            filter: brightness(90%);
+            transform: translateY(-.25rem);
+        }
+
+        &--login-btn {
+            background-color: $color-success;
+
+            &-link,
+            &-link:visited {
+                text-decoration: none;
+            }
+        }
+
+        &--register-btn {
+            background-color: $color-info;
+
+            &-link,
+            &-link:visited {
+                text-decoration: none;
+            }
+        }
+    }
+
+
+
+
+
+
+}

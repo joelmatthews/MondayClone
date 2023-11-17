@@ -1,0 +1,64 @@
+@import "../styles/base/base";
+
+.login-form {
+    margin: 8rem auto;
+    padding: 3rem;
+    max-width: 30rem;
+    border-radius: 1rem;
+    background-color: $layout-color-secondary;
+    box-shadow: 0 2rem 2rem rgba($font-color-primary-dark, .25);
+
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__input {
+        padding: 1rem 3rem 1rem 2rem;
+        background-color: rgba(#fff, .75);
+        border: none;
+        border-radius: .5rem;
+        display: block;
+        width: 100%;
+        color: inherit;
+        font-family: inherit;
+        outline: none;
+
+        &:focus {
+            box-shadow: 0 1rem 1rem rgba($font-color-primary-dark, .25);
+        }
+    }
+
+    &__label {
+        font-weight: 500;
+        color: $layout-color-primary;
+        display: block;
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        margin-top: .5rem;
+        transition: all .3s .2s;
+    }
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    &__btn {
+        width: 100%;
+        display: block;
+        padding: 1rem 2rem;
+        background-color: $color-success;
+        border: none;
+        border-radius: 1rem;
+        font-family: inherit;
+        transition: all .2s;
+        color: currentColor;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-.25rem);
+            box-shadow: 0 1rem 1rem rgba($font-color-primary-dark, .25);
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+$layout-color-primary: #DEE2E6;
+$layout-color-primary-2: #ADB5BD;
+$layout-color-secondary: #6C757D;
+
+$color-success: #D0F4DE;
+$color-warning: #FCF6BD;
+$color-info: #A9DEF9;
+$color-purple: #E4C1F9;
+$color-pink: #FF99C8;
+
+$font-color-primary: #343A40;
+$font-color-primary-dark: #212529;
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, $layout-color-primary-2 60%, $layout-color-secondary)
+}
